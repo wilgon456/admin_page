@@ -9,28 +9,94 @@
     <script src="https://kit.fontawesome.com/ab659ab506.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--상단 일괄삭제버튼-->
-    <button class="delButton" type="button" onclick="#">일괄삭제</button>
+    <!--상단 삭제 버튼 고정-->
+    <header class="del_all">
+        <button class="del_allBtn" onclick="#">일괄삭제</button>
+    </header>
 
-    <!--유저가 업로드 나비 정보 값 박스-->
-    <div class="userButterfly">
-        <div class="userImgBox">
-            <img class="userImg" src="./testSrc/test.jpg" alt="UserUploadImg">
+    <!--사용자 업로드 이미지 파트-->
+    <main class="user_uploadContetns">
+        <div class="user_upCon1">
+            <div class="user_upConImg">
+                <img src="http://cdn.edujin.co.kr/news/photo/201910/31818_55021_2029.jpg">
+            </div>
+            <div class="user_upConContext">
+                <div class="user_upConInfo">
+                    <span>Device </span>
+                </div>
+                <div class="user_upConBtn">
+                    <button onclick="#"><i class="fa-solid fa-magnifying-glass-plus fa-xl"></i></button>
+                    <button onclick="#"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="info">
-            <span>2023-03-30-05-30 <br> Device information insert.</span>
+        <div class="user_upCon1">
+            <div class="user_upConImg">
+                <img src="http://cdn.edujin.co.kr/news/photo/201910/31818_55021_2029.jpg">
+            </div>
+            <div class="user_upConContext">
+                <div class="user_upConInfo">
+                    <span>Device </span>
+                </div>
+                <div class="user_upConBtn">
+                    <button onclick="#"><i class="fa-solid fa-magnifying-glass-plus fa-xl"></i></button>
+                    <button onclick="#"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                </div>
+            </div>
         </div>
-        <div class="del">
-            <button type="button" class="indiDel"><i class="fa-solid fa-magnifying-glass-plus fa-lg"></i></i></button>
-            <button type="button" class="indiDel"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+        <div class="user_upCon1">
+            <div class="user_upConImg">
+                <img src="http://cdn.edujin.co.kr/news/photo/201910/31818_55021_2029.jpg">
+            </div>
+            <div class="user_upConContext">
+                <div class="user_upConInfo">
+                    <span>Device </span>
+                </div>
+                <div class="user_upConBtn">
+                    <button onclick="#"><i class="fa-solid fa-magnifying-glass-plus fa-xl"></i></button>
+                    <button onclick="#"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <!--페이지 네비게이션-->
-    <nav>
-        <button type="menu" class="pgNumb">1</button>
+        <div class="user_upCon1">
+            <div class="user_upConImg">
+                <img src="http://cdn.edujin.co.kr/news/photo/201910/31818_55021_2029.jpg">
+            </div>
+            <div class="user_upConContext">
+                <div class="user_upConInfo">
+                    <span>Device </span>
+                </div>
+                <div class="user_upConBtn">
+                    <button onclick="#"><i class="fa-solid fa-magnifying-glass-plus fa-xl"></i></button>
+                    <button onclick="#"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="user_upCon1">
+            <div class="user_upConImg">
+                <img src="http://cdn.edujin.co.kr/news/photo/201910/31818_55021_2029.jpg">
+            </div>
+            <div class="user_upConContext">
+                <div class="user_upConInfo">
+                    <span>Device </span>
+                </div>
+                <div class="user_upConBtn">
+                    <button onclick="#"><i class="fa-solid fa-magnifying-glass-plus fa-xl"></i></button>
+                    <button onclick="#"><i class="fa-regular fa-trash-can fa-xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--페이지 네비게이션 파트-->
+    <nav class="pgNavi">
+        <button onclick="#" class="moveBtn"><i class="fa-solid fa-caret-left fa-xl"></i></button>
+        <button onclick="#" class="numbBtn">1</button>
+        <button onclick="#" class="numbBtn">2</button>
+        <button onclick="#" class="numbBtn">3</button>
+        <button onclick="#" class="numbBtn">4</button>
+        <button onclick="#" class="numbBtn">5</button>
+        <button onclick="#" class="moveBtn"><i class="fa-solid fa-caret-right fa-xl"></i></button>
     </nav>
-
-
 </body>
 </html>

@@ -6,89 +6,130 @@
     font-style: normal;
 }
 
-/*상단 일괄삭제 버튼*/
-.delButton {
-    margin: auto;
-    display: block;
-    font-size: 25px;
-    font-weight: 600;
-    padding: 5px 25px;
-    cursor: pointer;
-    border: 1px solid black;
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*삭제 버튼*/
+.del_all {
+    width: 100vw;
+    height: 5vh;
+    padding-top: 1vh;
+    position: relative;
+}
+
+
+.del_allBtn {
+    position: fixed;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: white;
+    border: 2px solid black;
     border-radius: 10px;
-    background-color: white;
-    margin-top: 20px;
-
-}
-
-.delButton:focus {
-    background-color: black;
-    color: white;
-}
-
-/*유저 업로드 나비 정보 값 박스*/
-.userButterfly {
-    margin: auto;
-    border: 3px solid black;
-    width: 95%;
-    height: 100;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.userImgBox {
-    width: 50%;
-    border: 1px solid gray;
-    padding: 10px;
-}
-
-.userImg {
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.info {
-    margin-left: 10px;
-    width: 40%;  
-}
-
-.del {
-    width: 7%;
-}
-
-.indiDel{
-    padding: 15px 10px;
-    border-radius: 5px;
-    background-color: white;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.indiDel:focus{
-    background-color: black;
-    color: white;
-}
-
-/*페이지넘버*/
-.pgNumb {
-    display: block;
-    padding: 10px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 5px;
-    background-color: white;
-    font-weight: 500;
     font-size: 15px;
+    font-weight: 450;
+    left: 50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }
 
-.pgNumb:focus {
+.del_allBtn:active {
     background-color: black;
     color: white;
 }
+
+/*사용자 업로드*/
+.user_uploadcontents {
+    width: 100vw;
+    height: 90vh;
+}
+
+.user_upCon1 {
+    width: 95vw;
+    height: 25vh;
+    border: 1px solid black;
+    display: block;
+    margin: 15px auto;
+}
+
+.user_upConImg {
+    width: 60vw;
+    height: 25vh;
+    overflow: hidden;
+    background-color: red;
+    float: left;
+}
+
+.user_upConImg > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_upConInfo {
+    float: right;
+    width: 35vw;
+    height: 15vh;
+    text-align: center;
+    line-height: 15vh;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.user_upConBtn {
+    line-height: 10vh;
+    text-align: center;
+}
+
+.user_upConBtn > button {
+    padding: 2vw;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 2vw 0 2vw;
+}
+
+.user_upConBtn > button:active {
+    background-color: black;
+    color: white;
+
+}
+
+/*페이지네비*/
+.pgNavi {
+    text-align: center;
+    padding: 2vh;
+}
+
+.pgNavi > .numbBtn {
+    padding: 1.5vw;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pgNavi > .numbBtn:active {
+    background-color: black;
+    color: white;
+}
+
+.pgNavi > .moveBtn {
+    border: none;
+    background-color: white;
+    padding: 1.5vw;
+    font-size: 1rem;
+
+}
+
+.pgNavi > .moveBtn:active {
+    color: white;
+    background-color: black;
+
+}
+
+
